@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0px;
@@ -6,48 +6,149 @@
 }
 
 body{
-    box-sizing: border-box;
-    background-image: url("./assets/background.png");
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imagem_cabecalho{
+    width: 6%;
+}
+
+.links-cabecalho{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    font-weight: 600;
+}
+
+.conteudo-pagina01{
+    padding: 4%;
+    display: flex;
+    gap: 12%;
+    background-image: url("./assets/background_1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
-main{
+.imagem_principal{
+    width: 36%;
+    border: 0.8rem solid black;
+}
+
+.imagens_logos{
     display: flex;
-    justify-content: center;
 }
 
-div{
+#pato-quebrado{
+    width: 16em;
+}
+
+.slogan{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: white;
+    font-size: 2rem;
+    padding: 0% 24%;
+}
+
+.conteudo-pagina02{
+    padding-top: 4%;
+}
+
+.conteudo-pagina02_titulo{
+    text-align: center;
+    font-size: 3.6rem;
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    font-weight: 600;
+}
+
+.conteudo-pagina02_carrosel{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4.8%;
+    padding: 8%;
+}
+
+.conteudo-pagina02_carrosel_fotos{
+    width: 72%;
+}
+
+.conteudo-pagina03{
+    background-image: url("./assets/background_03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4.8%;
+}
+
+.conteudo-pagina03_titulo{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 0% 32%;
+}
+
+.conteudo-pagina03_aulas{
+    text-align: center;
+}
+
+#aulas{
+    width: 16%;
+    padding: 12%;
+}
+
+footer{
+    padding: 4% 0%;
+    background-color: #142147;
+    text-align: center;
+}
+
+.rodape {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    padding-bottom: 4%;
+}
+
+.imagem_rodape{
+    width: 12rem;
+}
+
+.rodape_imagem{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section{
-    text-align: center;
-    width: 70%;
+.rodape_imagem_redes{
+    display: flex;
+    gap: 8%;
 }
 
-section img:nth-child(1){
-    width: 46%;
+#pato_rodape{
+    width: 9.6rem;
 }
 
-section img:nth-child(2){
-    width: 40%;
-}
-
-p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: bold;
+h3{
     color: white;
-    font-size: 180%;
-    padding: 8%;
-    text-align: center;
-}
-
-mark{
-    background-color: transparent;
-    color: #142147;
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    font-weight: 600;
 }
