@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana DevWeb</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
         <img id="imagem_cabecalho" src="./assets/logocabecalho_cimatecjr.png" alt="Logo CimatecJr Cabeçalho">
         <a class="links-cabecalho" href="#">Sobre</a>
         <a class="links-cabecalho" href="#">Fotos</a>
+        <h1 id="titulo_mobile">Semana Web Dev</h1>
         <a class="links-cabecalho" href="#">Aulas</a>
         <img id="imagem_cabecalho" src="./assets/logocabecalho_clube.png" alt="Logo Clube Cabeçalho">
     </header>
     <main>
         <section class="conteudo-pagina01">
-           <img class="imagem_principal" src="./assets/imagem_principal.png" alt="Imagem Principal Página 01">
+            <img class="imagem_principal" src="./assets/imagem_principal.png" alt="Imagem Principal Página 01">
             <div class="logos-texto">
                 <section class="imagens_logos">
                     <img src="./assets/logoprincipal_cimatecjr.png" alt="Logo CimatecJr Principal">
-                    <img id="pato-quebrado" src="./assets/logocabecalho_clube.png" alt="Logo Clube Principal"> 
+                    <img id="pato-quebrado" src="./assets/logocabecalho_clube.png" alt="Logo Clube Principal">
                 </section>
-                <h1 class="slogan">Uma parceria que vai <span style="color: #142147">transformar</span> o seu futuro !</h1>
-            </div> 
+                <h1 class="slogan">Uma parceria que vai <span>transformar</span> o seu futuro !</h1>
+            </div>
         </section>
         <section class="conteudo-pagina02">
             <h2 class="conteudo-pagina02_titulo">Fotos do Evento</h2>
             <div class="conteudo-pagina02_carrosel">
-                <img src="./assets/Arrow left-circle.png" alt="Imagem Seta da Esquerda">
-                <img class="conteudo-pagina02_carrosel_fotos" src="./assets/fotos_evento.png" alt="Fotos do Evento">
-                <img src="./assets/Arrow right-circle.png" alt="Imagem Seta da Direita">
+                <div id="carrossel_desktop">
+                    <img src="./assets/Arrow left-circle.png" alt="Imagem Seta da Esquerda">
+                    <img class="conteudo-pagina02_carrosel_fotos" src="./assets/fotos_evento.png" alt="Fotos do Evento">
+                    <img src="./assets/Arrow right-circle.png" alt="Imagem Seta da Direita">
+                </div>
+                <div id="carrossel_mobile">
+                    <img class="conteudo-pagina02_carrosel_fotos" src="./assets/fotos_evento.png" alt="Fotos do Evento">
+                    <div id="setas_mobile">
+                        <img src="./assets/Arrow left-circle.png" alt="Imagem Seta da Esquerda">
+                        <img src="./assets/Arrow right-circle.png" alt="Imagem Seta da Direita">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="conteudo-pagina03">
@@ -52,17 +64,19 @@
                     <img src="./assets/Linkedin.png" alt="Ícone Linkedin"></img>
                     <img src="./assets/Twitter.png" alt="Ícone Twitter"></img>
                 </section>
-            </div>     
+            </div>
             <div class="rodape_imagem">
-               <img id="pato_rodape" class="imagem_rodape" src="./assets/logocabecalho_clube.png" alt="Logo Clube Rodapé"> 
-               <section class="rodape_imagem_redes">
-                <img src="./assets/Instagram.png" alt="Ícone Instagram"></img>
-                <img src="./assets/Linkedin.png" alt="Ícone Linkedin"></img>
-                <img src="./assets/Twitter.png" alt="Ícone Twitter"></img>
-            </section>
+                <img id="pato_rodape" class="imagem_rodape" src="./assets/logocabecalho_clube.png"
+                    alt="Logo Clube Rodapé">
+                <section class="rodape_imagem_redes">
+                    <img src="./assets/Instagram.png" alt="Ícone Instagram"></img>
+                    <img src="./assets/Linkedin.png" alt="Ícone Linkedin"></img>
+                    <img src="./assets/Twitter.png" alt="Ícone Twitter"></img>
+                </section>
             </div>
         </section>
         <h3>2025. Todos direitos reservados aos patos</h3>
     </footer>
 </body>
+
 </html>

@@ -3,6 +3,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
+}
+
+img{
+    display: flex;
 }
 
 body{
@@ -21,6 +26,10 @@ header{
     width: 6%;
 }
 
+#titulo_mobile{
+    display: none;
+}
+
 .links-cabecalho{
     font-size: 1.6rem;
     text-decoration: none;
@@ -28,6 +37,85 @@ header{
     font-family: "Poppins", sans-serif;
     font-style: bold;
     font-weight: 600;
+}
+
+span{
+    color: #142147;
+}
+
+#carrossel_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .conteudo-pagina03{
+        text-align: center;
+        display:flex;
+        justify-content:center;
+    }
+    #aulas{
+        padding: 4%;
+        width: 60rem;
+    }
+    .links-cabecalho{
+        display: none;
+    }
+
+    #carrossel_mobile{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #carrossel_desktop{
+        display: none;
+    }
+
+    .imagem_principal {
+        display: none;
+    }
+
+    header{
+        height: 4rem;
+    }
+
+    #imagem_cabecalho{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #titulo_mobile{
+        display: flex;
+        color: #FFF;
+        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    span{
+        color: #E84D0D;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .conteudo-pagina02_carrosel_fotos{
+        width: 72%;
+        display: flex;
+        justify-content: center;
+    }
+    .conteudo-pagina03_aulas{
+        display:flex;
+        flex-direction: column;
+    }
+ 
+}
+
+.carrossel_desktop{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .conteudo-pagina01{
@@ -84,6 +172,7 @@ header{
 
 .conteudo-pagina02_carrosel_fotos{
     width: 72%;
+    text-align: center;
 }
 
 .conteudo-pagina03{
@@ -109,7 +198,6 @@ header{
 
 #aulas{
     width: 16%;
-    padding: 12%;
 }
 
 footer{
