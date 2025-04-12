@@ -21,6 +21,15 @@ header{
     width: 6%;
 }
 
+#modal{
+    width: 40%;
+    height: 60%
+    padding: 12% 6%;
+    background-color: #FFF;
+    display: none;
+    flex-direction: column;
+}
+
 .links-cabecalho{
     font-size: 1.6rem;
     text-decoration: none;
@@ -82,8 +91,19 @@ header{
     padding: 8%;
 }
 
-.conteudo-pagina02_carrosel_fotos{
+.conteudo-pagina02_carrosel_fotos1{
     width: 72%;
+}
+
+.conteudo-pagina02_carrosel_fotos2{
+    width: 72%;
+    display: none;
+    
+}
+
+.conteudo-pagina02_carrosel_fotos3{
+    width: 72%;
+    display: none;
 }
 
 .conteudo-pagina03{
