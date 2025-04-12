@@ -3,9 +3,11 @@ const botaoEsquerda = document.getElementById("setaEsquerda");
 
 console.log(botaoDireita)
 
+let indice = 0;
+
 function verificaIndice() {
 
-    if (indice = 0) {
+    if (indice == 0) {
         const imagem1 = document.querySelector(".conteudo-pagina02_carrosel_fotos1");
         imagem1.style.display = "flex";
         const imagem2 = document.querySelector(".conteudo-pagina02_carrosel_fotos2");
@@ -14,7 +16,7 @@ function verificaIndice() {
         imagem3.style.display = "none";
     }
 
-    if (indice = 1) {
+    if (indice == 1) {
         const imagem1 = document.querySelector(".conteudo-pagina02_carrosel_fotos1");
         imagem1.style.display = "none";
         const imagem2 = document.querySelector(".conteudo-pagina02_carrosel_fotos2");
@@ -23,7 +25,7 @@ function verificaIndice() {
         imagem3.style.display = "none";
     }
 
-    if (indice = 2) {
+    if (indice == 2) {
         const imagem1 = document.querySelector(".conteudo-pagina02_carrosel_fotos1");
         imagem1.style.display = "none";
         const imagem2 = document.querySelector(".conteudo-pagina02_carrosel_fotos2");
@@ -33,8 +35,9 @@ function verificaIndice() {
     }
 }
 
+
 function avancou() {
-    indice = (indice =+ 1) % 3;
+    indice = (indice + 1) % 3;
     console.log(indice)
     verificaIndice();
     return indice;
@@ -53,13 +56,10 @@ function regrediu() {
     return indice;
 }
 
-// indice = regrediu();
-// indice = avancou();
-
-// console.log(indice)
 
 botaoEsquerda.addEventListener("click", regrediu);
 botaoDireita.addEventListener("click", avancou);
+
 
 
 
